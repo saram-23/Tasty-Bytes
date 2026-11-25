@@ -4,8 +4,9 @@ Project made by:
 * Moșneag Sara 
 * Rachieru Luiza Teodora
 * Stoica Izabela
-  
+
 (325CC)
+
 ---
 ## **1. Introduction**
 ### **1.1. Overview**
@@ -29,6 +30,7 @@ The system will be built as a client-server web application using a server-side 
 * **Data Persistence**: A relational database (SQLite) will be used to store ingredients, recipes, and standard nutritional values
 
 The entire codebase will be version-controlled using **Git**. The development team will utilize a collaborative Git workflow (with individual feature branches, rebasing, and merges) hosted on a remote repository platform (GitHub) to parallelize work and maintain code integrity.
+
 ---
 ## **2. System Overview**
 ### **2.1. Architecture**
