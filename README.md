@@ -3,7 +3,8 @@
 Project made by:
 * Moșneag Sara 
 * Rachieru Luiza Teodora
-* Stoica Izabela 
+* Stoica Izabela
+  
 (325CC)
 ---
 ## **1. Introduction**
@@ -15,7 +16,7 @@ The application is structured around the following main features:
 * **Recipe Matching**: An algorithm that processes the selected ingredients and returns the best matching recipes
 * **Nutritional Statistics Calculator**: A feature that calculates an estimated breakdown of macronutrients (Calories, Protein, Carbohydrates, Fats) per serving based on the ingredient quantities
 * **Recipe Management**: A user-friendly form allowing the addition of new recipes (including title, cooking time, servings, and instructions) directly into the database
-Recipe Details: A dedicated view showing information, instructions, and nutritional facts for any selected meal
+* **Recipe Details**: A dedicated view showing information, instructions, and nutritional facts for any selected meal
 ### **1.3. Target Audience**
 The application is primarily addressed to:
 * **Students** who want to cook quick, budget-friendly meals with limited on-hand ingredients
@@ -26,6 +27,7 @@ The system will be built as a client-server web application using a server-side 
 * **Backend**: Developed in **Python**, utilizing the **FastAPI** framework to handle routing, business logic, and form submissions
 * **Frontend**: Standard HTML, CSS, and basic JavaScript, rendered server-side using **Jinja2** templates to display data passed from the Python backend
 * **Data Persistence**: A relational database (SQLite) will be used to store ingredients, recipes, and standard nutritional values
+
 The entire codebase will be version-controlled using **Git**. The development team will utilize a collaborative Git workflow (with individual feature branches, rebasing, and merges) hosted on a remote repository platform (GitHub) to parallelize work and maintain code integrity.
 ---
 ## **2. System Overview**
@@ -45,6 +47,7 @@ The entire codebase will be version-controlled using **Git**. The development te
 * **ingredients**: id, name, calories, protein, carbs, fats (values per 100 g).
 * **recipes**: id, title, cooking_time, servings, instructions.
 * **recipe_ingredients**: recipe_id, ingredient_id, quantity (linking table for the many-to-many relationship between recipes and ingredients).
+
 The same ingredients table is used for the checklist, the matching algorithm and the nutritional calculation, so recipes only contain known ingredients.
 ### **2.4. Technologies and Libraries**
 * **Python** and **FastAPI** (routing, Form parameters, validation), run with Uvicorn.
