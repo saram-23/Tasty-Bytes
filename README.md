@@ -1,5 +1,5 @@
 # **Tasty Bytes**
----
+
 Project made by:
 * Moșneag Sara 
 * Rachieru Luiza Teodora
@@ -7,7 +7,6 @@ Project made by:
 
 (325CC)
 
----
 ## **1. Introduction**
 ### **1.1. Overview**
 The project aims to develop a web-based application designed to help users minimize food waste and simplify daily meal planning, using what they already have in the kitchen. The core concept revolves around a "fridge inventory" system: users input the ingredients they currently have available at home, and the application generates personalized recipe suggestions that use those specific items. Additionally, the application gives a detailed nutritional breakdown for each generated recipe.
@@ -31,7 +30,6 @@ The system will be built as a client-server web application using a server-side 
 
 The entire codebase will be version-controlled using **Git**. The development team will utilize a collaborative Git workflow (with individual feature branches, rebasing, and merges) hosted on a remote repository platform (GitHub) to parallelize work and maintain code integrity.
 
----
 ## **2. System Overview**
 ### **2.1. Architecture**
 * Client-server web application using server-side rendering.
@@ -61,7 +59,7 @@ The same ingredients table is used for the checklist, the matching algorithm and
 * **MVC-like structure**: database = Model, Jinja2 templates = View, FastAPI routes = Controller.
 * **Post/Redirect/Get** for form submissions.
 * **Modular, function-based design**: small reusable functions (e.g. match percentage, nutritional values), which lets each team member work on a separate feature branch with fewer merge conflicts.
----
+
 ## **3. Detailed Component Design**
 ### **3.1. Adding a new recipe**
 * **Functionality**: Provides a user-friendly method to add a new entry in the Data Base. It should include a title, the cooking time, a list of the ingredients, the number of servings and the instructions.
@@ -91,6 +89,6 @@ The same ingredients table is used for the checklist, the matching algorithm and
   * **Frontend** (Jinja2 HTML Template): A template that uses Python template tags to display the data sent from the backend.
   * **Backend** (FastAPI Route): A Python route that queries the database for a specific recipe ID and renders the metadata into the template.
 * **Interfaces & Communication**: Triggered when the user selects a recipe from the recommended results, sending an HTTP GET request to the FastAPI server.
----
+
 ## **4. Conclusion**
 In the end, we hope to be able to build a working web-based application that handles a relational database. As we don't have much experience with Python, it surely will be a big challenge but we hope to be able to finish this project in less than 32h of work per person. We will have to learn how to work with FastAPI, Jinja2, SQLite and Python, and then put it into practice. This project will help us to get better at working in a team and to learn a few things about web-development. 
