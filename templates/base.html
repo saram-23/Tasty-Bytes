@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-50">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Tasty Bytes{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-full flex flex-col text-slate-800 antialiased">
+  <header class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3.5 sm:px-6">
+      <a href="/" class="flex items-center gap-2.5 group">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-600 text-white font-bold shadow-sm group-hover:bg-emerald-700 transition-colors">
+          TB
+        </span>
+        <div>
+          <span class="text-lg font-bold tracking-tight text-slate-900">Tasty Bytes</span>
+          <span class="hidden sm:inline-block ml-2 rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700">
+            Smart Kitchen
+          </span>
+        </div>
+      </a>
+
+      <nav class="flex items-center gap-1 sm:gap-2 text-sm font-medium">
+        <a href="/" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors">
+          Fridge Search
+        </a>
+        <a href="/recipes" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors">
+          All Recipes
+        </a>
+        <a href="/recipes/new" class="ml-1 inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 px-3.5 py-2 text-white shadow-sm hover:bg-emerald-700 transition-colors">
+          <span>+ Add Recipe</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1 mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-500">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      Tasty Bytes &middot; Reduce food waste, cook smarter, and track your macros.
+    </div>
+  </footer>
+</body>
+</html>
